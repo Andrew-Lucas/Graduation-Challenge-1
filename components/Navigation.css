@@ -1,0 +1,20 @@
+.bottom_nav{
+  position: fixed;
+  bottom: 0% !important;
+  height: 10%;
+  width: 100%;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_nav > ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.bottom_nav > ul svg{
+  height: 110%;
+  width: 110%;
+}

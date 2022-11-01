@@ -1,0 +1,1259 @@
+@import 'Reset.css';
+@import '../components/Navigation.css';
+
+body {
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+main {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  padding: 0% 5%;
+}
+.resume-instructions {
+  background-color: #e6e6e6;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 1vmax;
+  color: #5b4cbf;
+}
+.resume-instructions li {
+  list-style-type: disc;
+  margin-left: 7%;
+  width: 110%;
+}
+.resume_details-holder {
+  margin-top: 7%;
+}
+.resume_details {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  color: #5b4cbf;
+  text-shadow: 1px 3px 1px #00000026;
+}
+
+.resume_details {
+  display: flex;
+  height: 7.5%;
+  font-size: 1.2vmax;
+}
+
+.personal_details-form,
+.about_me-form,
+.education_form,
+.languages_form,
+.work_experience-form,
+.projects_form,
+.skills_form,
+.soft_skills-form,
+.achievement_form {
+  width: 79% !important;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vmax;
+}
+.personal_details-form input,
+.personal_details-additional_form input,
+.education_fill-form input,
+.languages_form input,
+.work_experience-form input,
+.projects_form input,
+.skills_form input,
+.soft_skills-form input,
+.achievement_form input {
+  height: 3vmin;
+  border: solid 2px lightgray;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.5s;
+  padding-left: 5%;
+}
+.personal_details-form input:focus .personal_details-form input:focus,
+.personal_details-additional_form input:focus,
+.education_fill-form input:focus,
+.languages_form input:focus,
+.work_experience-form input:focus,
+.skills_form input:focus,
+.soft_skills-form input:focus,
+.achievement_form input:focus {
+  border: solid 2px lightsteelblue;
+}
+
+.full_first-column {
+  width: 45%;
+}
+.personal_details-form .first_column {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+.personal_details-form > .second_column {
+  height: 45%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.second_column .aligned {
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.second_column .aligned:nth-child(2) {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+.additional_details {
+  width: 73%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5b4cbf;
+  font-size: 1.1vmax;
+}
+.personal_details-additional_form {
+  padding-top: 3%;
+  background-color: white;
+  height: 20vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about_me-form {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about_me-instructions,
+.languages_form-instructions,
+.work_experience-instructions,
+.education_form-instructions,
+.projects_form-instructions,
+.skills_form-instructions,
+.soft_skills-form-instructions,
+.achievement_form-instructions {
+  display: flex;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: #e6e6e6;
+  color: #5b4cbf;
+}
+.about_me-instructions li,
+.languages_form-instructions li,
+.work_experience-instructions li,
+.education_form li,
+.projects_form-instructions li,
+.skills_form-instructions li,
+.soft_skills-form-instructions li,
+.achievement_form-instructions li {
+  list-style-type: disc;
+  margin-left: 7%;
+  width: 110%;
+}
+.about_me-form textarea {
+  resize: none;
+  height: 25%;
+  width: 85%;
+  border: solid 2px gainsboro;
+  border-radius: 10px;
+  padding: 2% 3%;
+  margin-top: 3%;
+}
+
+.languages_form {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.languages_form-instructions {
+  height: 10%;
+  margin-bottom: 3%;
+}
+.mini_form {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
+.mini_form select {
+  width: 43%;
+  border: solid 2px gainsboro;
+  border-radius: 10px;
+  height: 4vmin !important;
+  outline: none;
+  padding: 0% 3%;
+  text-align: center;
+}
+
+.languages_form .additional_details {
+  width: 37%;
+}
+
+.work_experience-form {
+  flex-direction: column;
+}
+.work_experience-instructions {
+  height: 11%;
+}
+.work_experience-instructions li {
+  margin-left: 5%;
+  font-size: 1.65vmin;
+}
+.work_experience-fill-form {
+  height: 37%;
+  display: flex;
+  justify-content: space-between;
+}
+.work_experience-form .left_column {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.working_dates {
+  display: flex;
+  justify-content: space-between;
+}
+.working_dates input {
+  width: 40% !important;
+  color: gray;
+}
+.work_experience-form .right_column {
+  height: 91%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right_column .currently_working-status {
+  margin-top: 12%;
+  margin-bottom: -5%;
+  width: 56%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #5b4cbf;
+}
+.currently_working-status input[type='checkbox'] {
+  height: 85%;
+  width: 8.5%;
+}
+textarea {
+  resize: none;
+  height: 17%;
+  outline: none;
+  border-radius: 7px;
+  border: solid 2px lightgrey;
+}
+.work_experience-form .additional_details {
+  width: 45%;
+  margin: 0;
+}
+
+.education_form {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.education_form-instructions {
+  height: 10%;
+  width: 100%;
+  margin-bottom: 3%;
+}
+.education_form li {
+  margin-left: 5%;
+  width: 100%;
+  font-size: 0.9vmax;
+}
+.education_fill-form {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.education_fill-form .left_column {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.education_fill-form .right_column {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.major {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 45%;
+}
+.education_dates {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.education_dates > input {
+  width: 40%;
+}
+.currently_studying-status {
+  display: flex;
+  align-items: center;
+  color: #5b4cbf;
+}
+.currently_studying-status input[type='checkbox'] {
+  height: 80%;
+  width: 8%;
+}
+.education_form .additional_details {
+  width: 45%;
+}
+
+.projects_form {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.projects_form-instructions {
+  height: 11%;
+}
+
+.projects_fill-form .projects_form-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  height: 11%;
+}
+.projects_form-top .left_column,
+.projects_form-top .right_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 45%;
+}
+.projects_form-stacks {
+  padding: 0% 3%;
+  margin-bottom: 2%;
+  width: 100%;
+}
+.form-stacks {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-stacks input:first-child {
+  border: 2px solid gainsboro;
+}
+.form-stacks input {
+  width: 25%;
+  height: 3vmin;
+  margin-top: 2%;
+  border: 2px dashed gainsboro;
+  border-radius: 10px;
+}
+.add_stacks {
+  width: 27% !important;
+  margin-top: 2%;
+}
+.project_dates-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.project_dates {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0% 3%;
+  width: 40%;
+}
+.project_dates span {
+  margin-bottom: 6%;
+}
+.dates {
+  display: flex;
+  justify-content: space-between;
+  width: 105%;
+}
+.dates input {
+  width: 40%;
+}
+.project_ongoing-status {
+  color: #5b4cbf;
+  width: 45%;
+  display: flex;
+  align-items: center;
+}
+.project_description {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 3%;
+  margin-top: 5%;
+}
+.project_description span {
+  margin-bottom: 3%;
+}
+.projects_form .additional_details {
+  width: 45%;
+}
+.project_description > textarea {
+  height: 10vmin !important;
+  margin-bottom: 2%;
+}
+
+.skills_form {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.skills_form-instructions {
+  height: 13%;
+}
+.skills_form-instructions li {
+  margin-left: 4%;
+  width: 100%;
+  font-size: 1.7vmin;
+}
+.skills_fill-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  width: 100%;
+}
+.skills_fill-form .right_column select {
+  margin-top: 5%;
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  height: 4vmin;
+  text-align: center;
+}
+.skills_fill-form .right_column,
+.skills_fill-form .left_column {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skill-additional__input {
+  position: relative;
+  margin-top: 3%;
+}
+.skills_form .additional_details {
+  width: 40%;
+}
+
+.soft_skills-form {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.soft_skills-form-instructions {
+  height: 13%;
+}
+.soft_skills-form-instructions li {
+  margin-left: 4%;
+}
+.soft_skills-fill {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 3%;
+  margin-top: 2%;
+}
+.soft_skills-fill span {
+  margin-bottom: 2%;
+}
+.soft_skills-fill input {
+  width: 50%;
+}
+
+.achievement_form {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.achievement_form-instructions {
+  height: 13%;
+  font-size: 0.9vmax;
+  margin-bottom: 3%;
+}
+.down_spacing {
+  margin-bottom: 7%;
+}
+.achievement_fill-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 3%;
+}
+.achievement_fill-form .left_column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+}
+.achievement_fill-form .left_column span {
+  margin-bottom: 3%;
+}
+
+.achievement_fill-form .organization {
+  display: flex;
+  flex-direction: column;
+}
+.achievement_fill-form .right_column {
+  width: 45%;
+}
+.achievement_fill-form .right_column span {
+  margin-bottom: 3%;
+}
+
+.soft-additional-achivments {
+  position: relative;
+  width: 45%;
+  margin-top: 3%;
+}
+.achievement_form .additional-achivments {
+  width: 40%;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.hidden_forms {
+  display: none;
+}
+
+.display_resume {
+  background-color: #ffd872;
+  display: flex;
+  padding-top: 6%;
+  justify-content: center;
+  height: 90%;
+}
+.display_resume > section {
+  position: relative;
+  height: 80%;
+  width: 80%;
+  background-color: whitesmoke;
+  display: flex;
+}
+
+.template_display > aside {
+  height: 100%;
+  width: 33%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+aside svg {
+  width: 5%;
+  margin-right: 7%;
+  fill: white;
+}
+.linkedin_icon {
+  color: white;
+  font-weight: bold;
+  margin-right: 7%;
+}
+
+aside article {
+  display: flex;
+  flex-direction: column;
+  font-size: 1vmin;
+  margin-left: 10%;
+}
+aside article:nth-child(1) {
+  justify-content: space-between;
+  height: 17%;
+  padding-top: 15%;
+}
+.resume_info-heading {
+  font-size: 1.5vmin;
+  font-weight: bold;
+  margin-bottom: 1vmin;
+}
+aside article:nth-child(1) > div {
+  display: flex;
+  align-items: center;
+}
+
+aside article:nth-child(2) {
+  height: 15%;
+  width: 90%;
+}
+.in-resume-languages {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rate_circles {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rate_circles > .level_rate {
+  height: 0.7vmin;
+  width: 0.7vmin;
+  border: solid 1px white;
+  border-radius: 50%;
+}
+
+.template_display article:nth-child(3) {
+  height: 17%;
+  width: 90%;
+}
+.skills_holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 17%;
+}
+.skills_rate {
+  height: 0.4vmin;
+  border: solid 1px white !important;
+  border-radius: 15vmin;
+  width: 90%;
+  display: flex;
+}
+.skill_level {
+  height: 100%;
+  border-radius: 15vmin;
+  background-color: white;
+}
+
+.toogled_form {
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  height: 65%;
+  width: 80%;
+  z-index: 2 !important;
+  background-color: white;
+}
+.toogled_heading {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  height: 7vmin;
+  width: 80%;
+  z-index: 2;
+  z-index: 2 !important;
+  background-color: white;
+}
+
+/* #in_resume-skills_range{
+  color: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+
+}
+#in_resume-skills_range::-webkit-slider-thumb{
+  display: none;
+  height: 8px !important;
+  max-height: 8px !important;
+  background-color: white;
+} */
+
+.template_display article:nth-child(4) {
+  height: 17%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.soft-skills_ul {
+  list-style-type: disc;
+  margin-left: 10%;
+}
+
+.main_resume {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 3% 5% 3%;
+}
+.in-resume-full_name {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vmin;
+  width: 115%;
+}
+.in-resume-full_name span:nth-child(1) {
+  font-size: 3vmin;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.in-resume-about_me {
+  width: 120%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.5vmin;
+}
+.in-resume-about_me span:nth-child(1) {
+  font-size: 1.7vmin;
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.in-resume-work_experience {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3vmin;
+  width: 115%;
+}
+.in-resume-work_experience > span:nth-child(1),
+.in-resume-achievements > span:nth-child(1),
+.in-resume-projects > span:nth-child(1),
+.in-resume-education > span:nth-child(1) {
+  position: absolute;
+  top: -2vmin;
+  font-size: 1.5vmin;
+  font-weight: 700;
+}
+.in-resume-work_description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.in-resume-work_description > span:nth-child(1) {
+  font-weight: 500;
+  font-size: 1.5vmin;
+  margin-bottom: 2%;
+}
+.in-resume-work_description ul {
+  list-style-type: disc;
+  margin-left: 10%;
+  font-size: 1vmin;
+  margin-top: 5%;
+}
+
+.in-resume-projects {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3vmin;
+  width: 115%;
+}
+/* .in-resume-projects > span:nth-child(1){
+  position: absolute;
+  top: -2vmin;
+  font-size: 1.5vmin;
+  font-weight: 700;
+} */
+.in-resume-project_description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.in-resume-project_description > span:nth-child(1) {
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+.in-resume-projects .stack_holder {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% 0% 3% 3%;
+  width: 105%;
+}
+.stack_holder > .stacks {
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 2.5%;
+  font-size: 1vmin;
+  margin: 1%;
+}
+.in-resume-project_description ul {
+  list-style-type: disc;
+  font-size: 1vmin;
+  margin-left: 15%;
+}
+
+.in-resume-education {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3vmin;
+  width: 115%;
+}
+/* .in-resume-education > span:nth-child(1){
+  position: absolute;
+  top: -2vmin;
+  font-size: 1.5vmin;
+  font-weight: 700;
+} */
+.in-resume-education_description {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.in-resume-education_description > span:nth-child(1) {
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.in-resume-achievements {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3vmin;
+  width: 115%;
+}
+/* .in-resume-achievements > span:nth-child(1){
+  position: absolute;
+  top: -2vmin;
+  font-size: 1.3vmin;
+  font-weight: 700;
+} */
+.in-resume-achievements_description {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.in-resume-education_description > span:nth-child(1) {
+  font-weight: 500;
+  margin-bottom: 3%;
+}
+
+.display-template_2 {
+  justify-content: space-between;
+}
+.display-template_2 aside {
+  height: 97%;
+  background-color: transparent;
+  color: black;
+  padding-bottom: 3%;
+}
+.display-template_2 aside svg {
+  fill: black !important;
+}
+.display-template_2 .linkedin_icon {
+  color: black;
+}
+.display-template_2 .rate_circles > .level_rate {
+  border: solid 1px black;
+}
+.display-template_2 .skills_rate {
+  border: solid 1px black !important;
+}
+.display-template_2 .skill_level {
+  background-color: black !important;
+}
+.display-template_2 .in-resume-education {
+  display: flex;
+}
+.display-template_2 .in-resume-education_description {
+  justify-content: space-between;
+  height: 7%;
+}
+.display-template_2 .in-resume-achievements {
+  width: 80%;
+  flex-direction: column;
+}
+.display-template_2 .in-resume-achievement_dates {
+  margin-top: 2%;
+}
+.display-template_2 .in-resume-work_experience > span:nth-child(1),
+.display-template_2 .in-resume-achievements > span:nth-child(1),
+.display-template_2 .in-resume-projects > span:nth-child(1),
+.display-template_2 .in-resume-education > span:nth-child(1) {
+  top: -3.3vmin;
+}
+
+.display-template_2 .in-resume-education > span:nth-child(1),
+.display-template_2 .in-resume-achievements > span:nth-child(1),
+.display-template_2 .in-resume-projects > span:nth-child(1),
+.display-template_2 .in-resume-work_experience > span:nth-child(1),
+.display-template_2 .resume_info-heading,
+.display-template_2 .in-resume-about_me span:nth-child(1) {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 0.5vmin;
+}
+.resume_info-heading {
+  width: 90% !important;
+}
+
+.display-template_3 {
+  padding-top: 15%;
+}
+.display-template_3 .in-resume-full_name {
+  padding: 4.5%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 91%;
+}
+.display-template_3 aside {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  height: 83%;
+}
+.display-template_3 .in-resume-about_me > span:nth-child(1) {
+  border-bottom: solid 1px black;
+  padding: 1%;
+}
+.display-template_3 .in-resume-work_experience > span:nth-child(1),
+.display-template_3 .in-resume-projects > span:nth-child(1),
+.display-template_3 .in-resume-education > span:nth-child(1),
+.display-template_3 .in-resume-achievements > span:nth-child(1) {
+  top: -3vmin;
+  width: 100%;
+  border-bottom: solid 1px black;
+  padding: 1%;
+}
+
+.display-template_4 {
+  width: 73% !important;
+  height: 70% !important;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5% 3%;
+}
+.display-template_4 .in-resume-full_name {
+  width: 100%;
+  align-items: center;
+}
+.contact_with {
+  width: 100%;
+  text-align: center;
+}
+.contact_with span {
+  font-size: 1vmin !important;
+  border-right: solid 1px black;
+  padding-right: 1%;
+}
+.display-template_4 .in-resume-about_me {
+  width: 100%;
+}
+.display-template_4 .in-resume-about_me span:nth-child(1),
+.display-template_4 .in-resume-work_experience > span:nth-child(1),
+.display-template_4 .in-resume-projects > span:nth-child(1),
+.display-template_4 .in-resume-education > span:nth-child(1) {
+  border-bottom: solid 1px black;
+  width: 100%;
+  padding-bottom: 0.5vmin;
+}
+.display-template_4 .in-resume-projects ul,
+.display-template_4 .in-resume-work_experience ul {
+  margin-top: 1vmin;
+  list-style-type: disc;
+  margin-left: 3%;
+}
+
+.display-template_4 .language-achievement .resume_info-heading {
+  border-bottom: solid 1px black;
+  width: 97% !important;
+  padding-bottom: 0.5vmin;
+}
+.display-template_4 .in-resume-education_description {
+  margin-top: 1vmin;
+}
+
+.display-template_4 .in-resume-work_experience {
+  width: 100%;
+  justify-content: flex-start;
+}
+.display-template_4 .in-resume-work_description,
+.display-template_4 .in-resume-project_description {
+  width: 30%;
+  margin-top: 1vmin;
+}
+
+.display-template_4 .in-resume-working_dates,
+.display-template_4 .in-resume-project_dates {
+  position: absolute;
+  right: 0%;
+  top: 1vmin;
+}
+.display-template_4 .in-resume-projects {
+  width: 100%;
+  justify-content: flex-start;
+}
+.display-template_4 .in-resume-languages {
+  margin-top: 1vmin;
+}
+.display-template_4 .in-resume-study_dates,
+.display-template_4 .in-resume-achievement_dates {
+  margin-top: 1vmin;
+}
+.display-template_4 .in-resume-education {
+  width: 100%;
+}
+.display-template_4 .language-achievement {
+  position: relative;
+  display: flex;
+}
+.display-template_4 .language-achievement ul {
+  list-style-type: disc;
+  margin-left: 7%;
+}
+.display-template_4 .in_resume-general_skills {
+  display: flex;
+  justify-content: space-between;
+}
+.display-template_4 .in_resume-general_skills > div {
+  width: 50%;
+}
+.display-template_4 .in_resume-general_skills li {
+  list-style-type: disc;
+  margin-left: 5%;
+  margin-top: 1%;
+  font-size: 1.5vmin;
+}
+.other_links {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.1vmin;
+}
+.other_links > span {
+  border-right: solid 1px black;
+  margin-right: 1%;
+  padding-right: 1%;
+}
+
+.in_resume-general_skills ul {
+  border-top: solid 1px black;
+  width: 97%;
+  margin: 1% 0%;
+}
+
+.hidden_template-displays {
+  display: none !important;
+}
+
+.skills_shaded {
+  background-color: white;
+}
+
+.skills_shaded {
+  display: none;
+}
+
+.resume_finalization{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 7%;
+  width: 60%;
+  height: 5%;
+}
+.select_template{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #5B4CBF;
+  width: 33%;
+  justify-content: space-between;
+}
+.complete{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vmin;
+  width: 15vmin;
+  background-color: #5B4CBF;
+  color: white;
+  border-radius: 20px;
+  font-size: 2vmin;
+}
+
+.select_template-options{
+  z-index: 5 !important;
+  position: absolute;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+  background-color: #E5E5E5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.template_types{
+  height: 60%;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.template_types .templete_choices{
+  height: 100%;
+  width: 23%;
+}
+.templete_choices img{
+  height: 100%;
+  width: 100%;
+}
+
+.template-colors{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  height: 7%;
+}
+.template-colors > div{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  color: white;
+}
+.template-colors > div:nth-child(1){
+  background-color: #4F698F;
+}
+.template-colors > div:nth-child(2){
+  background-color: #1A3351;
+}
+.template-colors > div:nth-child(3){
+  background-color: #485B5B;
+}
+.template-colors > div:nth-child(4){
+  background-color: #3E4345;
+}
+.template-colors > div:nth-child(5){
+  background-color: #010101;
+}
+
+.transparent_screen{
+  opacity: 0.1;
+}
+
+.hidden_selection{
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  body{
+    flex-direction: column;
+    height: 200vh;
+    align-items: center;
+  }
+  .edit_resume-contents{
+    width: 85%;
+    height: 100vh;
+  }
+  .display_resume{
+    width: 90%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0%;
+  }
+  .toogled_heading{
+    top: 22%;
+    left: 3%;
+    min-width: 93%;
+  }
+  .toogled_form{
+    min-width: 92%;
+    top: 25%;
+    left: 3%;
+  }
+  .display_resume > section{
+    height: 65%;
+  }
+
+  .full_first-column {
+    width: 45%;
+  }
+  .personal_details-form input{
+    font-size: 2.5vmin;
+  }
+  .personal_details-form .first_column {
+    height: 40vmin;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .personal_details-form > .second_column {
+    height: 37vmin;
+    justify-content: space-between;
+  }
+  .second_column .aligned {
+    height: 45%;
+    justify-content: space-between;
+  }
+  .second_column .aligned:nth-child(1){
+    height: 20%;
+  }
+  .additional_details {
+    width: 95%;
+    font-size: 3vmin;
+  }
+  .personal_details-additional_form {
+    height: 27vmin;
+  }
+  .about_me-instructions{
+    height: 8vmin;
+  }
+  .languages_form select{
+    font-size: 2.5vmin;
+    height: 5vmin !important;
+  }
+  .languages_form-instructions{
+    height: 7vmin;
+  }
+  .languages_form .additional_details{
+    width: 50%;
+  }
+  .work_experience-form{
+    justify-content: flex-start;
+  }
+  .work_experience-form input{
+    font-size: 2.5vmin;
+  }
+  .work_experience-instructions{
+    height: 7vmin;
+  }
+  .work_experience-fill-form{
+    height: 25%;
+    margin: 3% 0%;
+  }
+  .currently_working-status{
+    width: 57% !important;
+    margin-bottom: -9% !important;
+  }
+  .work_experience-form .additional_details{
+    width: 60%;
+  }
+}

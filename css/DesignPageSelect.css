@@ -1,0 +1,144 @@
+@import "Reset.css";
+@import "../components/Navigation.css";
+
+body{
+  background-color: #FFD872;
+  height: 90vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+  position: relative;
+  top: 13%;
+  font-size: 2.5vmax;
+  text-align: center;
+  font-weight: 700;
+}
+
+.templete_select{
+  position: relative;
+  top: 20%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume_template{
+  display: flex;
+  justify-content: space-between;
+  height: 75%;
+  width: 75%;
+}
+.resume_template .templete_choices{
+  cursor: pointer;
+  height: 100%;
+  width: 22%;
+  position: relative !important;
+}
+.templete_choices img{
+  position: absolute !important;
+  height: 100%;
+  width: 100%;
+}
+
+.resume_color{
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  width: 75%;
+}
+.continue{
+  position: absolute;
+  bottom: -13% !important;
+  right: 1% !important;
+  text-decoration: none;
+  color: white;
+  height: 7%;
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #ffc93f;
+}
+
+.resume_color > div{
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.7vmax;
+}
+.resume_color > div:nth-child(1){
+  background-color: #4F698F;
+}
+.resume_color > div:nth-child(2){
+  background-color: #1A3351;
+  opacity: 0.3;
+}
+.resume_color > div:nth-child(3){
+  background-color: #485B5B;
+  opacity: 0.3;
+}
+.resume_color > div:nth-child(4){
+  background-color: #3E4345;
+  opacity: 0.3;
+}
+.resume_color > div:nth-child(5){
+  background-color: #010101;
+  opacity: 0.3;
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    font-size: 7vmin;
+    width: 80%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .templete_select{
+    width: 100%;
+    height: 73%;
+  }
+  .resume_template{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 82%;
+  }
+  .resume_template .templete_choices{
+    width: 47%;
+    height: 47%;
+  }
+  .resume_color{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .resume_color > div{
+    border-radius: 50%;
+    width: 13vmin;
+    font-size: 0%;
+  }
+  .bottom_nav{
+    display: none;
+  }
+  .continue{
+    width: 25vmin !important;
+    bottom: -11% !important;
+  }
+}
